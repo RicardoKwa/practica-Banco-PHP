@@ -1,0 +1,215 @@
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+  html {
+        height: 100%;
+  }
+
+  body {
+      font-family: Verona;
+      min-height: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      /* background-color: #6a7e6a; */
+      background-image: url("forest.jpg");
+      background-size: cover;
+      background-repeat: no-repeat; 
+  }
+
+  #cabecera{
+      background-color: #414441;
+      color: #e6dfdf;
+      border-bottom:3px solid rgba(144, 149, 147, 0.685);
+      border-radius: 5px;
+      font-size: 1.3em;
+      display: none;
+      padding: 20px;
+
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+      /* min-height: 50px; */
+  }
+  a{
+      text-decoration: none;
+      color: #e6dfdf;
+  }
+    
+  #all{
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+  }
+
+  #botones_inicio,.container{
+      font-size: 1.0em;
+      background-color: #ecf3ede5;
+      border: 5px solid rgba(78, 82, 80, 0.281);
+      padding: 80px;
+      display: flex;
+      flex-flow: column nowrap;
+      border-radius: 20px;
+  }
+  hr{
+      color: #a1a1a1;
+  }
+
+  .container{
+      padding: 50px; 
+  }
+
+  .container>*{
+        margin: 2px;
+  }
+
+  #botones_inicio > *{
+        margin: 10px; 
+  }
+
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: rgb(204, 203, 203);
+    outline: none;
+  }
+    
+  input[type=text], input[type=password], [type=number]{
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #d8d6d69b;
+  }
+  input[type=submit]{
+    font-family: Verona;
+    background-color: #2b2c2cf8;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #new_cuenta{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  button {
+    font-family: Verona;
+    background-color: #303130;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  #formularioReg,#formularioLog{
+    display: none;
+  }
+
+  #principal{
+    display: none;
+    flex-flow: column wrap;
+    font-size: 1.2rem;
+    background-color: #ecf3ede5;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid rgba(78, 82, 80, 0.281);
+    justify-content: space-between;  
+    align-items: center;
+    min-width: 450px;
+    min-height: 400px;
+    animation-name: opacidad;  /*Esta animación no se pide, la he añadido yo*/
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacidad{
+ from {
+    opacity: 0;
+ } to {
+    opacity: 1;
+ }
+}
+
+ #contenido{
+    flex-grow: 1;
+    display: flex;
+    flex-grow: column nowrap;
+    justify-content: center;
+    align-items: center;
+ }
+
+#titulo{
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #3c3f3c1c;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+ #add-cuenta{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+ #lista-botones{
+   list-style: none;
+   margin: 20px;
+   font-size: 1.1em;
+ }
+ 
+ #lista-botones > li > button{
+   width: 100%;
+ }
+ 
+ #registro_mov{
+   border: 2px solid black;
+   border-radius: 10px;
+   padding: 20px;
+   margin: 20px;
+   font-size: 1em;
+ }
+
+ #registro_mov > *{
+   margin: 5px 2px;
+ }
+
+ #tabla-movimientos{
+  width:100%;
+  border: 2px solid #242524;
+  border-radius: 10px;
+  padding: 3px;
+  background-color: white;
+
+}
+
+
+#tabla-movimientos td{
+  border:1px solid rgba(0, 0, 0, 0.308);
+}
+
+#saldo{
+  margin-top: 10px;
+}
